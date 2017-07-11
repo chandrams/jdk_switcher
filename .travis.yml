@@ -20,6 +20,7 @@ before_install:
     chmod +x "${HOME}/bin/shfmt" ;
   fi
 script:
+- ls /usr/lib/jvm
 - ./runtests
 - git diff --exit-code
 - git diff --cached --exit-code

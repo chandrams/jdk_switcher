@@ -253,6 +253,7 @@ print_java_home() {
 }
 
 jdk_switcher() {
+	echo "********* in jdk_switcher"
     typeset COMMAND JDK
     COMMAND="$1"
     JDK="$2"
