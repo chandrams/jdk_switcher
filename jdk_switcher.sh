@@ -259,9 +259,11 @@ jdk_switcher() {
 
     case "$COMMAND" in
         use)
+			echo "Calling switch_jdk $JDK"
             switch_jdk "$JDK"
             ;;
         home)
+			echo "Calling switch_jdk $JDK"
             print_java_home "$JDK"
             ;;
         *)
