@@ -11,9 +11,6 @@ __runtests_help() {
 }
 
 __runtests_lint() {
-    echo 'Running shellcheck'
-    git grep -l -E '^#!/usr/bin/env bash' | xargs shellcheck
-
     echo 'Running shfmt'
     shfmt -i 4 -w .
 }
